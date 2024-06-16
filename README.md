@@ -5,6 +5,10 @@
 
 Este é um aplicativo frontend para a Pokédex que consome dados da API [PokéAPI Rocketman](https://fast-poke-api.vercel.app). Ele foi desenvolvido usando React e Chakra UI.
 
+### Deploy
+
+O deploy do projeto se encontra aqui [Pokédex](https://pokedex-front-peach.vercel.app/)
+
 ## Funcionalidades
 
 - **Listagem de Pokémons**: Exibe uma lista de Pokémons com paginação.
