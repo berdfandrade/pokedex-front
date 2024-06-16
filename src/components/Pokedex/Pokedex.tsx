@@ -44,7 +44,7 @@ const Pokedex: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/pokemons")
+      .get("https://fast-poke-api.vercel.app/pokemons")
       .then((response) => {
         setPokemons(response.data);
         setLoading(false);
