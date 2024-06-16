@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Use a imagem oficial do Node.js como base
-FROM node:14
+FROM node:18
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
@@ -10,16 +10,16 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instala as dependências
-RUN npm install
+RUN yarn
 
 # Copia o restante do código da aplicação
 COPY . .
 
 # Constrói a aplicação para produção
-RUN npm run build
+RUN yarn build
 
 # Expõe a porta que a aplicação utilizará
 EXPOSE 5173
 
 # Comando para rodar a aplicação em modo de desenvolvimento
-CMD ["npm", "run", "preview"]
+CMD ["yarn", "dev"]
