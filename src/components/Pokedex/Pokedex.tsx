@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
   SimpleGrid,
-  Spinner,
   Center,
   Container,
   Heading,
@@ -14,7 +13,6 @@ import {
   InputGroup,
   InputLeftElement,
   useColorMode,
-  Text
 } from "@chakra-ui/react";
 
 import { FaSearch } from "react-icons/fa";
@@ -26,6 +24,7 @@ import Footer from "../Footer/Footer";
 import PokeballSpinner from "../Others/PokeballSpinner";
 
 interface Pokemon {
+  url : string;
   id: number;
   name: string;
   image: string;

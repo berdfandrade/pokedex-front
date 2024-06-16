@@ -1,5 +1,3 @@
-
-
 export interface Pokemon {
   name: string;
   url: string;
@@ -22,7 +20,7 @@ export interface PokemonDetails {
     };
     is_hidden: boolean;
     slot: number;
-  }>
+  }>;
   name: string;
   sprites: {
     front_default: string;
@@ -35,18 +33,18 @@ export interface PokemonDetails {
   height: number;
   weight: number;
   game_indices: [game_index: number];
-  stats : {
+  stats: {
     base_stat: number;
     effort: number;
     stat: {
       name: string;
       url: string;
     };
-  }
+  }[];
   types: PokemonType[];
-  cries : {
-    latest : string; 
-  }
+  cries: {
+    latest: string;
+  };
 }
 
 export interface PokeCellProps {
