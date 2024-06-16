@@ -1,5 +1,8 @@
 # Pokédex Frontend
 
+![148shots_so](https://github.com/berdfandrade/pokedex-front/assets/96706881/b65212d7-717e-4faf-99c4-1238483b0c54)
+
+
 Este é um aplicativo frontend para a Pokédex que consome dados da API [PokéAPI Rocketman](https://fast-poke-api.vercel.app). Ele foi desenvolvido usando React e Chakra UI.
 
 ## Funcionalidades
